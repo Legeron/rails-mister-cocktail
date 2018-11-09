@@ -1,0 +1,7 @@
+<div class="container text-center">
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description%>
+  <%= f.association :ingredient, as: :radio_buttons, value_method: :id%>
+  <%= f.button :submit %>
+  <% end %>
+</div>
